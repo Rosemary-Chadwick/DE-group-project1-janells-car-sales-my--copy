@@ -84,6 +84,6 @@ if __name__ == '__main__':
     csv_name = 'data/client_contact_status.csv'
     engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db}')
     get_data(0,2,'people')
-    # load_all('people', engine)
-    # load_all('clients', engine)
+    load_all('people', engine)
+    load_all('clients', engine)
     load_csv(filepath=csv_name)
